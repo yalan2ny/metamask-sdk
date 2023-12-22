@@ -4,9 +4,6 @@
 *.*-e
 **/.sdk-comm
 
-deployments/
-!deployments/dapps
-
 # Logs
 logs
 *.log
