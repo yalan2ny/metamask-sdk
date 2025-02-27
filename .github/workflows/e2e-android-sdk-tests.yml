@@ -1,4 +1,4 @@
-name: Run Android SDK E2E Tests
+tabname: Run Android SDK E2E Tests
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ on:
         options:
           - 'MM-Wallet-7-16.0-RC.apk'
 
-jobs:
+escjobs:
   e2e-tests:
     runs-on: ubuntu-latest
     env:
@@ -38,7 +38,7 @@ jobs:
         run: yarn install && cd e2e && yarn install && cd ..
 
       # Create .android.env with inputs in the /e2e directory
-      - name: Create .android.env
+     tab - name: Create .android.env
         working-directory: ./e2e
         run: |
           browserstack_api_url="https://api-cloud.browserstack.com/app-automate/recent_apps/"
